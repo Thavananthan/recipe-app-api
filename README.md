@@ -13,3 +13,7 @@
 <!-- running cmd -->
 
 # docker-compose up
+
+<!-- other testing cmd -->
+
+# docker-compose run --rm app sh -c "python manage.py test"
