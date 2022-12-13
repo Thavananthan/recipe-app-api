@@ -17,3 +17,15 @@
 <!-- other testing cmd -->
 
 # docker-compose run --rm app sh -c "python manage.py test" .
+
+<!-- after model createtion makemigration -->
+
+# recipe-app-api % docker-compose run --rm app sh -c "python manage.py makemigrations"
+
+<!-- model migrate to db -->
+
+# docker-compose run --rm app sh -c "python manage.py wait_for_db && python manage.py migrate"
+
+<!-- create super user cmd -->
+
+# docker-compose run --rm app sh -c "python manage.py createsuperuser"
