@@ -20,7 +20,7 @@
 
 <!-- after model createtion makemigration -->
 
-# recipe-app-api % docker-compose run --rm app sh -c "python manage.py makemigrations"
+# docker-compose run --rm app sh -c "python manage.py makemigrations"
 
 <!-- model migrate to db -->
 
@@ -29,3 +29,7 @@
 <!-- create super user cmd -->
 
 # docker-compose run --rm app sh -c "python manage.py createsuperuser"
+
+<!-- create app  -->
+
+# docker-compose run --rm app sh -c "python manage.py startapp recipe"
